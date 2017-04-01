@@ -174,7 +174,7 @@
       </div>
     </div>
   </section>-->
-  <!--<section>
+  <section>
     <div class='colors'>
       <div class='black' >
         <div class='autoplay' id='biggerCarousel'>
@@ -187,24 +187,31 @@
         <div>
           <img id='bigImg' src="http://placehold.it/350x300?text=3">
         </div>
+
+        
          </div>
-       -->
-        <!--<div class='blue'>
-          <div class="autoplay" id='smallerCarousel'>
-            <div>
-              <img src="http://placehold.it/350x300?text=1">
+       
+        <div class='blue'>
+          <div class="autoplaySmall" id='smallerCarousel'>
+          
+
+             <div class='slide1'>
             </div>
-            <div>
-              <img src="http://placehold.it/350x300?text=2">
+            <div class='slide2'>
+          
             </div>
-            <div>
-              <img src="http://placehold.it/350x300?text=3">
-            </div>
+            <div class='slide3'>
+              </div>
+          
           </div>
-        </div>-->
+        </div>
       </div>
     </div>
     
+  </section>
+
+  <section style='height: 1000px;'>
+
   </section>
 
   <section>
@@ -254,6 +261,18 @@
     });
   </script>
 
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $('.autoplaySmall').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
+
+
   <script>
 
   var fooReveal = {
@@ -269,6 +288,8 @@
     
     
   </script>
+
+
 </body>
 
 </html>
