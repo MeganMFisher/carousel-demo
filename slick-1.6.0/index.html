@@ -85,7 +85,7 @@
     #ipadCarouselBox {
       margin-left: 90px;
       padding-top: 35px;
-      width: 550px;
+      width: 560px;
     }
 
     /*#ipadCarousel {
@@ -99,7 +99,7 @@
     .slide1 {
       background: url("https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/8912/assets/pages/home/features/design-carousel/carson-1500w.jpg");
       background-size: cover;
-         width: 550px;
+         width: 560px;
       height: 400px;
       border: 2px solid white;
     }
@@ -107,7 +107,7 @@
     .slide2 {
       background: url("https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/8912/assets/pages/home/features/design-carousel/foundry-1500w.jpg");
        background-size: cover;
-         width: 550px;
+         width: 560px;
       height: 400px;
       border: 2px solid white;
     }
@@ -115,10 +115,17 @@
     .slide3 {
       background: url("https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/8912/assets/pages/home/features/design-carousel/rally.jpg");
        background-size: cover;
-         width: 550px;
+         width: 560px;
       height: 400px;
       border: 2px solid white;
     }
+
+    .blackSection {
+      background: black;
+      width: 100%;
+      height: 700px;
+    }
+
   </style>
 </head>
 
@@ -218,6 +225,22 @@
 
     </div>
   </section>
+  <section style='height: 1000px;'>
+
+  </section>
+
+  <section>
+
+    <div class='blackSection'><img class='blackSectionImg'style='width: 80%; height: 700px; float: right; ' src='https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/8928/assets/pages/home/features/business-devices.jpg'></div>
+
+
+  </section>
+ <section style='height: 1000px;'>
+
+  </section>
+
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
@@ -229,6 +252,22 @@
         autoplaySpeed: 2000,
       });
     });
+  </script>
+
+  <script>
+
+  var fooReveal = {
+    origin: 'bottom',
+  // opacity: 0,
+  easing   : 'ease',
+  scale    : .8,
+  duration: 1000 
+};
+
+    window.sr = ScrollReveal({ reset: true });
+      sr.reveal('.blackSectionImg', fooReveal);
+    
+    
   </script>
 </body>
 
